@@ -17,7 +17,13 @@ function search(){
     
     for(var i=0 ; lists.length;i++){
         lists[i].children[0].textContent.trim().toUpperCase();
-        if(lists[i].children[0].textContent.trim().includes(key).toUpperCase())
+        if(!lists[i].children[0].textContent.trim().includes(key)){
+            lists[i].style.display="none";
+
+        }else{
+            lists[i].style.display="block";
+        }
+
     }
 }
 
