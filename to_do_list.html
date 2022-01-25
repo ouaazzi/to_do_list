@@ -20,14 +20,20 @@
             <div class="col-sm-2 offset-10 col2"></div>
         </div>
         <div class="row row1">
-            <div class="col-sm-12" contenteditable=""></div>
+            <div class="col-sm-12" id="ctn" contenteditable=""></div>
         </div>
         <div class="row row2 ">
-            <button type="button" class="btn btn-dark btn-lg btn-block">Ajouter</button>
+            <button type="button" id="btnadd" class="btn btn-dark btn-lg btn-block" >Add Task</button>
         </div>
+        <div class="input-group mb-3 search">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Manage your Tasks</span>
+            </div>
+            <input type="text" class="form-control" id="search" placeholder="" aria-label="" aria-describedby="basic-addon1">
+          </div>
         
         <div class="list">
-            <ul class="list-group">
+            <ul class="list-group" id="ulg">
                 <div>
                     <li class="list-group-item">
                        <span>Task number 1 </span>  
